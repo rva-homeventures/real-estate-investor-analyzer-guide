@@ -10,7 +10,10 @@ This is a fully-responsive, modern documentation site built with Bootstrap 5 and
 - **Investment Strategies** - Understanding Long-Term Rentals, Short-Term Rentals, Mid-Term Rentals, and Fix & Flip
 - **Financial Metrics** - Plain-English explanations of Cap Rate, ROI, DSCR, Cash-on-Cash Return, and Monthly Cash Flow
 - **Real Examples** - Three realistic property scenarios showing how the analyzer works
-- **FAQ** - 17 common questions answered in investor-friendly language
+- **Privacy & Compliance** - Detailed privacy policy and legal information
+- **FAQ** - Common questions answered in investor-friendly language
+
+**Note:** Users are responsible for ensuring their use of the extension complies with all applicable laws and the Terms of Service of third-party real estate websites.
 
 ## 🎨 Features
 
