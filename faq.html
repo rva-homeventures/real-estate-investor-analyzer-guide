@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Real Estate Investor Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-building"></i> Real Estate Analyzer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="getting-started.html">Getting Started</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="learnDropdown" role="button" data-bs-toggle="dropdown">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                            <li><a class="dropdown-item" href="investment-strategies.html">Investment Strategies</a></li>
+                            <li><a class="dropdown-item" href="financial-metrics.html">Financial Metrics</a></li>
+                            <li><a class="dropdown-item" href="examples.html">Real Examples</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header bg-light py-5">
+            <div class="container-lg">
+                <h1 class="mb-3">Frequently Asked Questions</h1>
+                <p class="lead text-muted">Find answers to common questions about the Real Estate Investor Analyzer.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Content -->
+        <section class="py-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="accordion accordion-flush" id="faqAccordion">
+                            <!-- Installation -->
+                            <h5 class="mb-3 mt-4">Installation & Setup</h5>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+                                        <strong>Is the extension free?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! The Real Estate Investor Analyzer is completely free. There are no hidden fees, no premium versions, and no subscriptions. We built it because we believe real estate investors deserve better tools.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+                                        <strong>What browsers does it work on?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The extension works on:
+                                        <ul class="mt-2">
+                                            <li><strong>Google Chrome</strong> (v120+)</li>
+                                            <li><strong>Microsoft Edge</strong> (Chromium-based)</li>
+                                            <li><strong>Brave Browser</strong></li>
+                                            <li><strong>Any Chromium-based browser</strong></li>
+                                        </ul>
+                                        It does <strong>not</strong> work on Firefox or Safari at this time.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+                                        <strong>Does the extension need internet to work?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, you need internet to access Zillow and Redfin listings. However, all analysis happens locally in your browser—no data is sent to our servers. Your privacy is always protected.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+                                        <strong>Will this slow down my browser?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        No. The extension is lightweight and won't slow down your browsing. It only activates when you click the extension icon on a Zillow or Redfin page.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Using the Extension -->
+                            <h5 class="mb-3 mt-5">Using the Extension</h5>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5">
+                                        <strong>Why isn't the analyzer working on this Zillow page?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The extension only works on individual property detail pages on Zillow and Redfin. It won't work on:
+                                        <ul class="mt-2">
+                                            <li>Search results pages (list of multiple properties)</li>
+                                            <li>Zillow advertiser pages (sponsored listings sometimes have less data)</li>
+                                            <li>Off-market or private listings</li>
+                                        </ul>
+                                        <strong>Solution:</strong> Click into any individual property listing, then click the extension icon.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a6">
+                                        <strong>Can I analyze multiple properties at once?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You analyze one property at a time. Here's the workflow:
+                                        <ol class="mt-2">
+                                            <li>Go to Property A on Zillow → Click extension → See analysis</li>
+                                            <li>Go to Property B on Zillow → Click extension → See analysis</li>
+                                            <li>Go back and forth to compare</li>
+                                        </ol>
+                                        You can keep the extension open in a popup while browsing, making it easy to jump between properties.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a7">
+                                        <strong>What if the property data looks wrong?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The extension pulls data directly from Zillow and Redfin, so if something looks wrong:
+                                        <ol class="mt-2">
+                                            <li>Check the listing on Zillow/Redfin directly</li>
+                                            <li>Often the listing data itself has errors</li>
+                                            <li>You can manually override any property data before analyzing</li>
+                                        </ol>
+                                        <strong>Pro Tip:</strong> Always verify important numbers (price, property taxes, HOA) from official sources. Real estate data isn't always perfect!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Understanding Results -->
+                            <h5 class="mb-3 mt-5">Understanding Your Analysis</h5>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a8">
+                                        <strong>Why does a property show negative cash flow?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Negative cash flow means expenses exceed rental income. Common reasons:
+                                        <ul class="mt-2">
+                                            <li><strong>High price + Low rent:</strong> Property is expensive but doesn't rent for much</li>
+                                            <li><strong>High expenses:</strong> HOA fees, property taxes, or insurance are very high</li>
+                                            <li><strong>Market conditions:</strong> Property appreciates but doesn't cash flow (common in expensive areas)</li>
+                                        </ul>
+                                        <strong>Is this bad?</strong> Not necessarily! If you expect 5% appreciation per year, you might still want the property even with negative cash flow. The analyzer helps you see the full picture.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a9">
+                                        <strong>What do the AI recommendations mean?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The analyzer uses smart logic to recommend which strategy makes the most sense:
+                                        <ul class="mt-2">
+                                            <li><strong>"Excellent...":</strong> Strong financials for this strategy</li>
+                                            <li><strong>"Good...":</strong> Viable but not optimal</li>
+                                            <li><strong>"Not Recommended...":</strong> Numbers don't work</li>
+                                        </ul>
+                                        <strong>Important:</strong> This is a suggestion, not gospel. Your final decision should also consider your local market knowledge, personal goals, and risk tolerance.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a10">
+                                        <strong>How accurate are rent estimates?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Rent estimates come from market comparable properties and should be within 10-20% of actual. However:
+                                        <ul class="mt-2">
+                                            <li>Local market knowledge is crucial (neighborhood desirability, school district)</li>
+                                            <li>You should always verify by checking local rental listings</li>
+                                            <li>Income can vary significantly by neighborhood</li>
+                                        </ul>
+                                        <strong>Pro Tip:</strong> When you find a property you like, spend 30 minutes on Zillow or AirBnb to understand the local rental market before investing.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Advanced Questions -->
+                            <h5 class="mb-3 mt-5">Advanced Questions</h5>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q11">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a11">
+                                        <strong>Can I set different settings for different properties?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! You have two levels of settings:
+                                        <ol class="mt-2">
+                                            <li><strong>Global Defaults:</strong> Settings that apply to all properties (down payment %, closing costs, etc.)</li>
+                                            <li><strong>Per-Property Overrides:</strong> When analyzing a specific property, you can override any setting just for that analysis</li>
+                                        </ol>
+                                        This is perfect for comparing scenarios: "What if I put 25% down instead of 20% on this one?"
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q12">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a12">
+                                        <strong>Does the extension factor in property appreciation?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The analyzer focuses on cash flow and ROI from operations. Long-term appreciation depends on:
+                                        <ul class="mt-2">
+                                            <li>Your local market (typically 2-4% annual)</li>
+                                            <li>Economic factors</li>
+                                            <li>Neighborhood trends</li>
+                                        </ul>
+                                        <strong>How to use this:</strong> Use the analyzer to find cash-flowing properties, then research appreciation potential separately. A property that cash flows + appreciates is the holy grail.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q13">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a13">
+                                        <strong>Can I factor in major repairs (roof, HVAC, etc.)?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! You have two options:
+                                        <ol class="mt-2">
+                                            <li><strong>Maintenance Reserve:</strong> The analyzer includes a monthly maintenance budget (typically 8-10% of rent). This covers normal wear and tear.</li>
+                                            <li><strong>Manual Adjustments:</strong> If you know a roof replacement is coming soon, you can manually adjust the monthly costs to add an extra $100-200/month reserve.</li>
+                                        </ol>
+                                        <strong>Always get a professional inspection!</strong> Found a property you like? Hire an inspector ($300-500) before making an offer. It's the best $500 you'll spend.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q14">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a14">
+                                        <strong>Is the data stored or sent anywhere?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <strong>Privacy First:</strong> Your data is NEVER sent to our servers. Here's what happens:
+                                        <ol class="mt-2">
+                                            <li>Extension pulls data from Zillow/Redfin</li>
+                                            <li>All analysis happens in YOUR browser</li>
+                                            <li>Your settings are saved locally in your browser (localStorage)</li>
+                                            <li>You see the results, nothing is transmitted back to us</li>
+                                        </ol>
+                                        You have complete control and privacy. No tracking, no analytics, no account required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Troubleshooting -->
+                            <h5 class="mb-3 mt-5">Troubleshooting</h5>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q15">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a15">
+                                        <strong>The extension icon isn't showing up. What do I do?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Try these steps:
+                                        <ol class="mt-2">
+                                            <li>Make sure you're on a Zillow or Redfin property detail page (not search results)</li>
+                                            <li>Refresh the page (Ctrl+R or Cmd+R)</li>
+                                            <li>Check that the extension is enabled:
+                                                <span class="badge bg-secondary">chrome://extensions</span> → Find the extension → Make sure it's toggled ON
+                                            </li>
+                                            <li>Check your extension toolbar (usually top-right of Chrome) — the icon might be hidden</li>
+                                        </ol>
+                                        If it still doesn't work, try uninstalling and reinstalling the extension.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q16">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a16">
+                                        <strong>The analysis numbers seem way off. What's wrong?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a16" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Common issues:
+                                        <ul class="mt-2">
+                                            <li><strong>Property data incomplete:</strong> Zillow/Redfin listings sometimes have missing data, triggering default estimates</li>
+                                            <li><strong>HOA or special taxes:</strong> Make sure HOA fees are captured</li>
+                                            <li><strong>Settings mismatch:</strong> Your default settings (20% down, 4% closing) might not match your actual situation</li>
+                                        </ul>
+                                        <strong>Solution:</strong> Manually verify all key data on the listing (purchase price, taxes, HOA), then correct any wrong info in the analyzer.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="q17">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a17">
+                                        <strong>Can I export or save the analysis?</strong>
+                                    </button>
+                                </h2>
+                                <div id="a17" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The extension displays the analysis right in a popup. You can:
+                                        <ul class="mt-2">
+                                            <li><strong>Take a screenshot:</strong> Easiest way to save the analysis</li>
+                                            <li><strong>Copy the data:</strong> Select and copy numbers to paste in a spreadsheet</li>
+                                            <li><strong>Use your notes:</strong> Write down key metrics (monthly cash flow, cap rate, ROI)</li>
+                                        </ul>
+                                        For tracking multiple properties, consider keeping a simple spreadsheet with the addresses and key metrics.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-5">
+                            <h5><i class="bi bi-question-circle"></i> Still Have Questions?</h5>
+                            <p class="mb-0">This guide covers the most common questions. For more help, refer to the Getting Started guide or review the example properties section.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Navigation</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html" class="text-decoration-none">← Home</a></li>
+                                    <li><a href="getting-started.html" class="text-decoration-none">Getting Started</a></li>
+                                    <li><a href="investment-strategies.html" class="text-decoration-none">Investment Strategies</a></li>
+                                    <li><a href="financial-metrics.html" class="text-decoration-none">Financial Metrics</a></li>
+                                    <li><a href="examples.html" class="text-decoration-none">Real Examples</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h6 class="card-title"><i class="bi bi-book"></i> Documentation Guide</h6>
+                                <p class="card-text small text-muted">Learn at your own pace. Start with Getting Started, then explore the strategies and metrics sections.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container-lg text-center">
+            <p class="mb-0">&copy; 2026 Real Estate Investor Analyzer. All rights reserved.</p>
+            <small>Built for real estate investors, by real estate investors.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,149 +1,133 @@
-# GitHub Pages Project
+# Real Estate Investor Analyzer - Documentation Guide
 
-A modern, responsive website template ready for GitHub Pages deployment.
+A comprehensive, professional documentation website for the Real Estate Investor Analyzer Chrome extension. Designed specifically for non-technical real estate investors.
 
-## 🚀 Features
+## 📋 Overview
 
-- **Fully Responsive** - Works on desktop, tablet, and mobile devices
-- **Modern Design** - Clean UI with CSS Grid and Flexbox
-- **Smooth Animations** - Engaging user experience with CSS animations
-- **Interactive Navigation** - Smooth scrolling and active link highlighting
-- **Zero Dependencies** - Pure HTML, CSS, and JavaScript
+This is a fully-responsive, modern documentation site built with Bootstrap 5 and custom CSS. It guides users through:
 
-## 📁 Project Structure
+- **Installation & Setup** - Step-by-step instructions to install and configure the extension
+- **Investment Strategies** - Understanding Long-Term Rentals, Short-Term Rentals, Mid-Term Rentals, and Fix & Flip
+- **Financial Metrics** - Plain-English explanations of Cap Rate, ROI, DSCR, Cash-on-Cash Return, and Monthly Cash Flow
+- **Real Examples** - Three realistic property scenarios showing how the analyzer works
+- **FAQ** - 17 common questions answered in investor-friendly language
+
+## 🎨 Features
+
+✅ **Professional Design** - Modern, clean, investor-focused aesthetic  
+✅ **Fully Responsive** - Works perfectly on desktop, tablet, and mobile  
+✅ **Non-Technical Language** - Explains complex financial concepts simply  
+✅ **Real Examples** - Suburban rentals, vacation properties, and fix-and-flip deals  
+✅ **Interactive Navigation** - Dropdown menus and responsive navbar  
+✅ **Bootstrap 5** - Built on industry-standard framework  
+✅ **Accessible** - WCAG compliant, screen reader friendly  
+✅ **Fast & Lightweight** - Loads quickly, no build process needed  
+
+## 📁 File Structure
 
 ```
-.
-├── index.html          # Main HTML file
-├── style.css           # Stylesheet
-├── script.js           # JavaScript functionality
-└── README.md           # This file
+real-estate-investor-analyzer-guide/
+├── index.html                      # Homepage
+├── getting-started.html            # Installation & setup guide
+├── investment-strategies.html       # Detailed strategy explanations
+├── financial-metrics.html          # Financial terms explained
+├── examples.html                   # Real property walkthroughs
+├── faq.html                        # 17 common questions & answers
+├── style.css                       # Custom styling
+├── script.js                       # Interactive features
+├── README.md                       # This file
+└── .github/                        # GitHub Pages config
 ```
 
-## 🛠️ Local Development
+## 🚀 Getting Started
 
-To preview the site locally:
+### Local Development
 
-1. **Option 1: Live Server Extension (Recommended)**
-   - Install the "Live Server" extension in VS Code
-   - Right-click on `index.html` and select "Open with Live Server"
+1. Clone the repository
+2. Open `index.html` in a web browser (or use Live Server in VS Code)
+3. No build process or dependencies needed!
 
-2. **Option 2: Python HTTP Server**
-   ```bash
-   python -m http.server 8000
-   ```
-   Then open `http://localhost:8000` in your browser
+### GitHub Pages Deployment
 
-3. **Option 3: Simply open the file**
-   - Double-click `index.html` to open in your default browser
+1. Push to your GitHub repository
+2. Go to **Settings → Pages**
+3. Select your branch and folder
+4. Your site will be live at `https://yourusername.github.io/repository-name`
 
-## 📤 Deploy to GitHub Pages
+## 📱 Pages Included
 
-### Step 1: Create a GitHub Repository
+| Page | Purpose | Key Content |
+|------|---------|------------|
+| **index.html** | Homepage | Hero, features, 4-step process, CTA |
+| **getting-started.html** | Installation guide | How to install, first setup, analyze property, customize |
+| **investment-strategies.html** | Strategy guide | LTR, STR, MTR, Fix & Flip explained with examples |
+| **financial-metrics.html** | Financial education | Cap Rate, ROI, DSCR, Cash-on-Cash, Monthly Cash Flow |
+| **examples.html** | Real scenarios | 3 realistic properties (suburban home, beach condo, fixer) |
+| **faq.html** | Q&A | 17 questions covering installation, usage, and troubleshooting |
 
-1. Go to [GitHub](https://github.com) and create a new repository
-2. Name it (e.g., `my-github-pages-site`)
-3. Don't initialize with README (you already have one)
+## 🎯 Design Philosophy
 
-### Step 2: Push Your Code
+**Built for Real Estate Investors, Not Developers:**
+- Simple, clear language (no jargon without explanation)
+- Realistic property examples with actual numbers
+- Focus on what investors care about: profit potential
+- Mobile-friendly for on-the-go research
+- No assumptions about financial knowledge
 
-Run these commands in your terminal:
+## 🛠 Customization
 
-```bash
-git init
-git add .
-git commit -m "Initial commit: GitHub Pages site"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-git push -u origin main
+### Change Colors
+
+Edit `:root` variables in `style.css`:
+```css
+:root {
+    --primary-color: #0d6efd;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+}
 ```
-
-### Step 3: Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Click **Settings** → **Pages** (in the left sidebar)
-3. Under **Source**, select:
-   - Branch: `main`
-   - Folder: `/ (root)`
-4. Click **Save**
-
-### Step 4: Access Your Site
-
-After a few minutes, your site will be live at:
-```
-https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
-```
-
-## 🎨 Customization
 
 ### Update Content
 
-Edit [index.html](index.html) to change:
-- Site title and meta description
-- Hero section text
-- About section content
-- Feature cards
+Simply edit any HTML file. Common areas to customize:
+- Company name/title
+- Example properties (update numbers)
 - Contact information
+- Links to Chrome Web Store
 
-### Modify Styling
+### Extend Navigation
 
-Edit [style.css](style.css) to customize:
-- Colors (change CSS variables in `:root`)
-- Fonts
-- Layout and spacing
-- Animations
+Add new pages and update the navbar in each HTML file:
+```html
+<li class="nav-item"><a class="nav-link" href="new-page.html">New Page</a></li>
+```
 
-### Add Functionality
+## 📊 Content Quality
 
-Edit [script.js](script.js) to add:
-- Form validation
-- API integrations
-- Custom interactions
+All documentation uses:
+- ✅ Simple, non-technical language
+- ✅ Real numbers and realistic scenarios
+- ✅ Clear examples (always $-based, not fictional)
+- ✅ Visual hierarchy (headers, cards, alerts)
+- ✅ Consistent tone (friendly but professional)
+- ✅ Accessible design (responsive, readable, keyboard-friendly)
 
-## 🌐 Custom Domain (Optional)
+## 🔗 Related Projects
 
-To use a custom domain:
+- **Main Extension**: See `real-estate-investor-analyzer` folder
+- **Chrome Web Store**: [Your extension link]
+- **Main Repository**: [Your repo link]
 
-1. Buy a domain from a registrar (GoDaddy, Namecheap, etc.)
-2. Add a `CNAME` file to your repository with your domain:
-   ```
-   www.yourdomain.com
-   ```
-3. Configure DNS settings with your registrar:
-   - Add a CNAME record pointing to `YOUR-USERNAME.github.io`
-4. In GitHub Settings → Pages, enter your custom domain
+## 📝 License
 
-## 📝 Tips
-
-- **Update `<title>` tag** in `index.html` for better SEO
-- **Add meta tags** for social media sharing (Open Graph, Twitter Cards)
-- **Include a favicon** by adding `<link rel="icon" href="favicon.ico">`
-- **Optimize images** before adding them to keep the site fast
-- **Test responsiveness** using browser dev tools (F12 → Device toolbar)
-
-## 🔧 Troubleshooting
-
-**Site not loading?**
-- Wait a few minutes after enabling GitHub Pages
-- Check the Actions tab for build status
-- Ensure `index.html` is in the root directory
-
-**Styles not applying?**
-- Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
-- Check that file paths are correct (relative paths)
-
-**404 error on links?**
-- Use relative paths, not absolute paths
-- Check file name capitalization (GitHub Pages is case-sensitive)
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+This documentation is provided as part of the Real Estate Investor Analyzer project.
 
 ## 🤝 Contributing
 
-Feel free to fork this project and customize it for your needs!
+Found an error or have improvement suggestions? Please submit an issue or pull request!
 
 ---
 
-**Made with ❤️ and deployed with GitHub Pages**
+**Happy investing!** 🏠📈
+
+*Built by real estate investors, for real estate investors.*

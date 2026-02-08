@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - Real Estate Investor Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-building"></i> Real Estate Analyzer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="getting-started.html">Getting Started</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="learnDropdown" role="button" data-bs-toggle="dropdown">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                            <li><a class="dropdown-item" href="investment-strategies.html">Investment Strategies</a></li>
+                            <li><a class="dropdown-item" href="financial-metrics.html">Financial Metrics</a></li>
+                            <li><a class="dropdown-item" href="examples.html">Real Examples</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header bg-light py-5">
+            <div class="container-lg">
+                <h1 class="mb-3">Getting Started</h1>
+                <p class="lead text-muted">Learn how to install and use the Real Estate Investor Analyzer extension.</p>
+            </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section class="py-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">Step 1: Installation</h2>
+                        
+                        <div class="alert alert-info">
+                            <strong>Good News:</strong> The extension is free and takes less than 2 minutes to install!
+                        </div>
+
+                        <h5 class="mt-4 mb-3">How to Install:</h5>
+                        <ol class="installation-steps">
+                            <li>
+                                <strong>Open Chrome Web Store</strong>
+                                <p class="text-muted">Go to <code>chrome.google.com/webstore</code> and search for "Real Estate Investor Analyzer"</p>
+                            </li>
+                            <li>
+                                <strong>Click "Add to Chrome"</strong>
+                                <p class="text-muted">A popup will appear asking for permission. Click "Add extension" to confirm.</p>
+                            </li>
+                            <li>
+                                <strong>The extension is ready!</strong>
+                                <p class="text-muted">You'll see the extension icon appear in your Chrome toolbar (top-right corner). You're all set!</p>
+                            </li>
+                        </ol>
+
+                        <hr class="my-5">
+
+                        <h2 class="mb-4">Step 2: First Time Setup</h2>
+                        <p>The first time you use the extension, you'll want to customize your default settings. This takes just 2 minutes:</p>
+
+                        <h5 class="mt-4 mb-3">Set Your Investment Parameters:</h5>
+                        <div class="setup-cards">
+                            <div class="setup-card">
+                                <h6>Down Payment %</h6>
+                                <p><strong>Default: 20%</strong></p>
+                                <p class="text-muted small">How much of the purchase price you plan to put down when buying a property. (If you always put down 25%, change this to 25%)</p>
+                            </div>
+                            <div class="setup-card">
+                                <h6>Closing Costs %</h6>
+                                <p><strong>Default: 4%</strong></p>
+                                <p class="text-muted small">Extra costs when buying (legal fees, inspections, title, etc.)</p>
+                            </div>
+                            <div class="setup-card">
+                                <h6>Selling Costs %</h6>
+                                <p><strong>Default: 6%</strong></p>
+                                <p class="text-muted small">Realtor commissions and costs when you sell (mostly relevant for fix & flip)</p>
+                            </div>
+                            <div class="setup-card">
+                                <h6>Vacancy Loss %</h6>
+                                <p><strong>Default: 5%</strong></p>
+                                <p class="text-muted small">Expected months when the rental unit sits empty between tenants</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning mt-4">
+                            <strong>Pro Tip:</strong> Don't have these numbers memorized? Use the defaults! You can always adjust them later when analyzing specific properties.
+                        </div>
+
+                        <hr class="my-5">
+
+                        <h2 class="mb-4">Step 3: Analyze Your First Property</h2>
+                        <p>Now let's analyze a real property. Here's how:</p>
+
+                        <h5 class="mt-4 mb-3">Quick Start Guide:</h5>
+                        <ol class="installation-steps">
+                            <li>
+                                <strong>Go to Zillow or Redfin</strong>
+                                <p class="text-muted">Find any property listing you're interested in.</p>
+                            </li>
+                            <li>
+                                <strong>Click the Extension Icon</strong>
+                                <p class="text-muted">Look for the Real Estate Analyzer icon in your Chrome toolbar (top-right). Click it.</p>
+                            </li>
+                            <li>
+                                <strong>Review the Property Data</strong>
+                                <p class="text-muted">The extension automatically pulls: address, price, bedrooms, bathrooms, square footage, property taxes, HOA fees, etc.</p>
+                            </li>
+                            <li>
+                                <strong>See All 4 Investment Strategies</strong>
+                                <p class="text-muted">Scroll down to see financial analysis for Long-Term Rental, Short-Term Rental, and Fix & Flip strategies.</p>
+                            </li>
+                            <li>
+                                <strong>Check the AI Verdict</strong>
+                                <p class="text-muted">The extension recommends which strategy makes the most sense for this specific property.</p>
+                            </li>
+                        </ol>
+
+                        <div class="alert alert-light border mt-4">
+                            <h6 class="mb-3"><i class="bi bi-lightbulb"></i> What to Look For:</h6>
+                            <ul class="mb-0">
+                                <li><strong>Green numbers</strong> = Positive cash flow (Property makes money)</li>
+                                <li><strong>Red numbers</strong> = Negative cash flow (Property costs money each month)</li>
+                                <li><strong>ROI</strong> = Return on Investment (How much your money grows)</li>
+                                <li><strong>Cap Rate</strong> = Capitalization Rate (How profitable the property is)</li>
+                            </ul>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <h2 class="mb-4">Step 4: Customize for Individual Properties</h2>
+                        <p>Every property is different. You can override the default settings for specific properties:</p>
+                        
+                        <h5 class="mt-3 mb-3">Why Override Settings?</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>Different financing:</strong> "I'm putting 30% down on this one"
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Property-specific costs:</strong> "This property has a known expensive repair we need to account for"
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Market variations:</strong> "Vacancy is higher in this neighborhood"
+                            </li>
+                        </ul>
+
+                        <p class="mt-4">When you override settings for a single property, they only affect that property's analysis—your global defaults stay the same.</p>
+
+                        <div class="alert alert-success mt-4">
+                            <strong>Congrats!</strong> You now know how to use the Real Estate Investor Analyzer. Next, learn about different investment strategies →
+                        </div>
+
+                        <div class="mt-5">
+                            <a href="investment-strategies.html" class="btn btn-primary btn-lg">
+                                Learn Investment Strategies <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="card sticky-top" style="top: 80px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Quick Checklist</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check1">
+                                    <label class="form-check-label" for="check1">
+                                        Extension installed
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check2">
+                                    <label class="form-check-label" for="check2">
+                                        Settings customized
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check3">
+                                    <label class="form-check-label" for="check3">
+                                        Analyzed first property
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check4">
+                                    <label class="form-check-label" for="check4">
+                                        Understood the metrics
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Need Help?</h5>
+                                <p class="text-muted small">Check out our FAQ section for answers to common questions.</p>
+                                <a href="faq.html" class="btn btn-sm btn-outline-primary w-100">View FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container-lg text-center">
+            <p class="mb-0">&copy; 2026 Real Estate Investor Analyzer. All rights reserved.</p>
+            <small>Built for real estate investors, by real estate investors.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

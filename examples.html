@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Examples - Real Estate Investor Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-building"></i> Real Estate Analyzer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="getting-started.html">Getting Started</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="learnDropdown" role="button" data-bs-toggle="dropdown">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                            <li><a class="dropdown-item" href="investment-strategies.html">Investment Strategies</a></li>
+                            <li><a class="dropdown-item" href="financial-metrics.html">Financial Metrics</a></li>
+                            <li><a class="dropdown-item active" href="examples.html">Real Examples</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header bg-light py-5">
+            <div class="container-lg">
+                <h1 class="mb-3">Real Examples</h1>
+                <p class="lead text-muted">See how the analyzer works with realistic property scenarios.</p>
+            </div>
+        </section>
+
+        <!-- Examples -->
+        <section class="py-5">
+            <div class="container-lg">
+                <p class="lead mb-5">Here are fictional but realistic property examples to show you how the analyzer works and which strategies might work best.</p>
+
+                <!-- Example 1: Family Home in Suburbs -->
+                <div class="example-section mb-5">
+                    <h2 class="mb-4">
+                        <i class="bi bi-house-fill"></i> Example 1: Suburban Family Home
+                    </h2>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Property Details</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p><strong>Location:</strong> Austin, TX suburbs</p>
+                                            <p><strong>Price:</strong> $425,000</p>
+                                            <p><strong>Bedrooms/Bathrooms:</strong> 4 bed / 2.5 bath</p>
+                                            <p><strong>Square Footage:</strong> 2,400 sq ft</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><strong>Year Built:</strong> 2015</p>
+                                            <p><strong>Condition:</strong> Excellent</p>
+                                            <p><strong>HOA:</strong> None</p>
+                                            <p><strong>Annual Property Tax:</strong> $6,375</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3">What the Analyzer Shows:</h5>
+
+                            <!-- LTR Strategy -->
+                            <div class="strategy-result mb-4">
+                                <div class="strategy-header">
+                                    <h6><i class="bi bi-calendar3"></i> Long-Term Rental</h6>
+                                </div>
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <span>Est. Monthly Rent</span>
+                                        <strong class="text-success">$2,200</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Monthly Cash Flow</span>
+                                        <strong class="text-success">+$285</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Cap Rate</span>
+                                        <strong>8.0%</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Cash-on-Cash Return</span>
+                                        <strong>7.5%</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>DSCR</span>
+                                        <strong class="text-success">1.28</strong>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mt-3"><strong>Verdict:</strong> <span class="badge bg-success">Good rental property</span> - Solid monthly income, excellent DSCR for financing.</p>
+                            </div>
+
+                            <!-- STR Strategy -->
+                            <div class="strategy-result mb-4">
+                                <div class="strategy-header">
+                                    <h6><i class="bi bi-calendar-day"></i> Short-Term Rental</h6>
+                                </div>
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <span>Est. Monthly Revenue</span>
+                                        <strong class="text-success">$4,500</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Monthly Cash Flow</span>
+                                        <strong class="text-warning">-$320</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Cap Rate</span>
+                                        <strong>-4.2%</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Occupancy Needed</span>
+                                        <strong>80%+</strong>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mt-3"><strong>Verdict:</strong> <span class="badge bg-danger">Not recommended</span> - Austin suburbs lack the tourism demand for Airbnb. Too much competition, low occupancy rates.</p>
+                            </div>
+
+                            <!-- Fix & Flip Strategy -->
+                            <div class="strategy-result mb-4">
+                                <div class="strategy-header">
+                                    <h6><i class="bi bi-hammer"></i> Fix & Flip</h6>
+                                </div>
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <span>Estimated After-Repair Value</span>
+                                        <strong>$425,000</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Potential Profit (no repairs)</span>
+                                        <strong class="text-warning">-$12,000</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>ROI</span>
+                                        <strong class="text-danger">-5.6%</strong>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mt-3"><strong>Verdict:</strong> <span class="badge bg-danger">Not a flip</span> - Excellent condition means no profit on resale. Better as a rental.</p>
+                            </div>
+
+                            <h5 class="mb-3 mt-5">Your Best Strategy Here:</h5>
+                            <div class="alert alert-success">
+                                <strong><i class="bi bi-star"></i> LONG-TERM RENTAL</strong>
+                                <p class="mb-2">This property is a perfect rental. You'll make $285/month, and the property will appreciate over time. Austin is a growing market, so you'll likely see property value increase too.</p>
+                                <p class="mb-0"><strong>Bottom line:</strong> In 30 years, you'll have paid off the mortgage AND earned $102,600 in pure profit, plus property appreciation.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">Investment Summary</h6>
+                                    <hr>
+                                    <p class="mb-2"><strong>Down Payment (20%):</strong> $85,000</p>
+                                    <p class="mb-2"><strong>Closing Costs (4%):</strong> $17,000</p>
+                                    <p class="mb-2"><strong>Total Cash Needed:</strong> $102,000</p>
+                                    <hr>
+                                    <p class="mb-0"><small class="text-muted">Your actual cash investment to get started</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Example 2: Beach Condo -->
+                <div class="example-section mb-5">
+                    <h2 class="mb-4">
+                        <i class="bi bi-house-fill"></i> Example 2: Beachfront Condo (Tourist Market)
+                    </h2>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Property Details</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p><strong>Location:</strong> Miami Beach, FL</p>
+                                            <p><strong>Price:</strong> $550,000</p>
+                                            <p><strong>Bedrooms/Bathrooms:</strong> 2 bed / 2 bath</p>
+                                            <p><strong>Square Footage:</strong> 1,100 sq ft</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><strong>Year Built:</strong> 2005</p>
+                                            <p><strong>Condition:</strong> Good</p>
+                                            <p><strong>HOA:</strong> $800/month</p>
+                                            <p><strong>Annual Property Tax:</strong> $5,500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3">What the Analyzer Shows:</h5>
+
+                            <!-- LTR Strategy -->
+                            <div class="strategy-result mb-4">
+                                <div class="strategy-header">
+                                    <h6><i class="bi bi-calendar3"></i> Long-Term Rental</h6>
+                                </div>
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <span>Est. Monthly Rent</span>
+                                        <strong class="text-success">$2,500</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Monthly Cash Flow</span>
+                                        <strong class="text-danger">-$685</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>DSCR</span>
+                                        <strong class="text-danger">0.85</strong>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mt-3"><strong>Verdict:</strong> <span class="badge bg-danger">Not viable</span> - High HOA fees kill profitability. You'd lose money monthly.</p>
+                            </div>
+
+                            <!-- STR Strategy -->
+                            <div class="strategy-result mb-4">
+                                <div class="strategy-header">
+                                    <h6><i class="bi bi-calendar-day"></i> Short-Term Rental</h6>
+                                </div>
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <span>Est. Nightly Rate</span>
+                                        <strong class="text-success">$250-350</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Monthly Revenue (75% occ.)</span>
+                                        <strong class="text-success">$5,625</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Monthly Cash Flow</span>
+                                        <strong class="text-success">+$1,240</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Cap Rate</span>
+                                        <strong>27.1%</strong>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mt-3"><strong>Verdict:</strong> <span class="badge bg-success">Excellent choice!</span> - High tourist demand + premium nightly rates = Serious profit.</p>
+                            </div>
+
+                            <h5 class="mb-3 mt-5">Your Best Strategy Here:</h5>
+                            <div class="alert alert-success">
+                                <strong><i class="bi bi-star"></i> SHORT-TERM RENTAL (Airbnb/VRBO)</strong>
+                                <p class="mb-2">This is a perfect beachfront Airbnb property. You'll make $1,240/month even at 75% occupancy. Miami has millions of tourists, so occupancy will likely be higher.</p>
+                                <p class="mb-0"><strong>Bottom line:</strong> You could pay for this property in 5-6 years with STR income alone. Long-term rental doesn't work here.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">Investment Summary</h6>
+                                    <hr>
+                                    <p class="mb-2"><strong>Down Payment (25%):</strong> $137,500</p>
+                                    <p class="mb-2"><strong>Closing Costs (4%):</strong> $22,000</p>
+                                    <p class="mb-2"><strong>Total Cash Needed:</strong> $159,500</p>
+                                    <hr>
+                                    <p class="mb-0"><small class="text-muted">Higher down payment due to investment property financing rules</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Example 3: Fixer Upper -->
+                <div class="example-section mb-5">
+                    <h2 class="mb-4">
+                        <i class="bi bi-hammer"></i> Example 3: Fixer-Upper (Fix & Flip Deal)
+                    </h2>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Property Details</h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p><strong>Location:</strong> Cleveland, OH</p>
+                                            <p><strong>List Price:</strong> $85,000 (distressed)</p>
+                                            <p><strong>Bedrooms/Bathrooms:</strong> 3 bed / 1 bath</p>
+                                            <p><strong>Square Footage:</strong> 1,400 sq ft</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><strong>Year Built:</strong> 1970</p>
+                                            <p><strong>Condition:</strong> Needs significant work</p>
+                                            <p><strong>Issues:</strong> Roof, plumbing, electrical, kitchen/bath</p>
+                                            <p><strong>Est. Repair Cost:</strong> $45,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3">What the Analyzer Shows:</h5>
+
+                            <!-- Fix & Flip Strategy -->
+                            <div class="strategy-result mb-4">
+                                <div class="strategy-header">
+                                    <h6><i class="bi bi-hammer"></i> Fix & Flip</h6>
+                                </div>
+                                <div class="result-metrics">
+                                    <div class="metric">
+                                        <span>Purchase Price</span>
+                                        <strong>$85,000</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Repair Costs</span>
+                                        <strong>$45,000</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Est. After-Repair Value</span>
+                                        <strong>$155,000</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Selling Costs (6%)</span>
+                                        <strong>-$9,300</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Your Total Investment</span>
+                                        <strong>$17,000 (down) + $45,000 (repairs)</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>Profit</span>
+                                        <strong class="text-success">$3,700</strong>
+                                    </div>
+                                    <div class="metric">
+                                        <span>ROI</span>
+                                        <strong>10.9%</strong>
+                                    </div>
+                                </div>
+                                <p class="text-muted small mt-3"><strong>Verdict:</strong> <span class="badge bg-warning">Marginal deal</span> - Profit exists but is modest considering the work and 6-9 month timeline.</p>
+                            </div>
+
+                            <!-- Why This Matters -->
+                            <h5 class="mb-3 mt-5">Why This Example Matters:</h5>
+                            <p>Not every fixer-upper is a great deal. This one shows positive profit, but:</p>
+                            <ul>
+                                <li>Only $3,700 profit for 6-9 months of work is ~$500-700/month of income</li>
+                                <li>It's riskier than it looks—unforeseen repairs could wipe out profit</li>
+                                <li>The property wouldn't work as a rental (renovation too expensive, market prices too low)</li>
+                            </ul>
+                            
+                            <h5 class="mb-3 mt-4">But What If You Negotiate Better?</h5>
+                            <p>If you could buy this property for $75,000 instead (negotiation skills!), the profit jumps to $13,700—a much better deal.</p>
+
+                            <div class="alert alert-info">
+                                <strong><i class="bi bi-lightbulb"></i> Key Learning:</strong> The analyzer helps you see which deals are worth pursuing. This one? Maybe keep looking unless you have a reputation for fast, efficient repairs.
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">Deal Timeline</h6>
+                                    <hr>
+                                    <p class="mb-2"><strong>Month 1:</strong> Purchase & plan</p>
+                                    <p class="mb-2"><strong>Months 2-5:</strong> Renovations</p>
+                                    <p class="mb-2"><strong>Month 6:</strong> List & sell</p>
+                                    <hr>
+                                    <p class="mb-2"><strong>Total Time:</strong> 6 months</p>
+                                    <p><strong>Profit:</strong> $3,700</p>
+                                    <p><small class="text-muted">$617/month equivalent</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-success mt-5">
+                    <h5><i class="bi bi-check-circle"></i> Key Takeaways from These Examples:</h5>
+                    <ol>
+                        <li><strong>Location determines strategy:</strong> Suburbs = long-term rental. Beach = Airbnb. Don't force it.</li>
+                        <li><strong>HOA fees matter:</strong> High fees can kill rental income.</li>
+                        <li><strong>Run the numbers:</strong> Some deals look better on paper than in reality.</li>
+                        <li><strong>Compare apples to apples:</strong> The analyzer shows all 4 strategies so you can see which actually works.</li>
+                    </ol>
+                </div>
+
+                <div class="mt-5 text-center">
+                    <a href="faq.html" class="btn btn-primary btn-lg">
+                        Still Have Questions? Check FAQ <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container-lg text-center">
+            <p class="mb-0">&copy; 2026 Real Estate Investor Analyzer. All rights reserved.</p>
+            <small>Built for real estate investors, by real estate investors.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

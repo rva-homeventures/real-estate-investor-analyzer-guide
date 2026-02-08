@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Metrics - Real Estate Investor Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-building"></i> Real Estate Analyzer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="getting-started.html">Getting Started</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="learnDropdown" role="button" data-bs-toggle="dropdown">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                            <li><a class="dropdown-item" href="investment-strategies.html">Investment Strategies</a></li>
+                            <li><a class="dropdown-item active" href="financial-metrics.html">Financial Metrics</a></li>
+                            <li><a class="dropdown-item" href="examples.html">Real Examples</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header bg-light py-5">
+            <div class="container-lg">
+                <h1 class="mb-3">Understanding Financial Metrics</h1>
+                <p class="lead text-muted">Learn what each number means and how to use them to find great deals.</p>
+            </div>
+        </section>
+
+        <!-- Metrics Section -->
+        <section class="py-5">
+            <div class="container-lg">
+                <p class="lead mb-5">When you analyze a property, you'll see several financial metrics. Don't let the jargon intimidate you—we'll break down each one in plain English.</p>
+
+                <!-- Monthly Cash Flow -->
+                <div class="metric-card mb-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3><i class="bi bi-cash-flow"></i> Monthly Cash Flow</h3>
+                            <p class="lead text-muted">What it means: Money in your pocket each month after ALL expenses.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="metric-badge">Money you keep</span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>How It's Calculated:</strong></h6>
+                    <div class="calculation-box">
+                        <p><strong>Monthly Rent Collected</strong></p>
+                        <p>−</p>
+                        <p><strong>Mortgage Payment</strong></p>
+                        <p>−</p>
+                        <p><strong>Property Taxes</strong></p>
+                        <p>−</p>
+                        <p><strong>Insurance</strong></p>
+                        <p>−</p>
+                        <p><strong>Maintenance & Repairs</strong></p>
+                        <p>−</p>
+                        <p><strong>Property Management Fees</strong></p>
+                        <p>=</p>
+                        <p><strong style="color: #28a745;">Monthly Cash Flow</strong></p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>Example:</strong></h6>
+                    <div class="example-box">
+                        <p><i class="bi bi-plus-circle text-success"></i> Monthly Rent: <strong>$2,000</strong></p>
+                        <p><i class="bi bi-dash-circle text-danger"></i> Mortgage: <strong>$1,000</strong></p>
+                        <p><i class="bi bi-dash-circle text-danger"></i> Property Taxes: <strong>$200</strong></p>
+                        <p><i class="bi bi-dash-circle text-danger"></i> Insurance: <strong>$150</strong></p>
+                        <p><i class="bi bi-dash-circle text-danger"></i> Maintenance: <strong>$100</strong></p>
+                        <p><i class="bi bi-dash-circle text-danger"></i> Management: <strong>$160</strong></p>
+                        <hr>
+                        <p><strong style="color: #28a745;">Monthly Profit: $390</strong></p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What's Good?</strong></h6>
+                    <ul>
+                        <li><strong>Positive (Green):</strong> $100+ per month is excellent for long-term rentals</li>
+                        <li><strong>Break Even:</strong> Close to $0—you're not losing money, but not making much</li>
+                        <li><strong>Negative (Red):</strong> You're paying money out of pocket each month</li>
+                    </ul>
+
+                    <p class="mt-3 text-muted small"><strong>Remember:</strong> This is actual money that hits your bank account. Over 30 years, $390/month = $140,400!</p>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Cap Rate -->
+                <div class="metric-card mb-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3><i class="bi bi-percent"></i> Cap Rate (Capitalization Rate)</h3>
+                            <p class="lead text-muted">"How hard is this property working for me?"</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="metric-badge">Annual Profitability</span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What It Means (In Plain English):</strong></h6>
+                    <p>Cap Rate is the percentage return you're getting on your actual cash investment. It answers: "For every dollar I put into this property, how much comes back to me annually?"</p>
+
+                    <h6 class="mt-4 mb-3"><strong>How It's Calculated:</strong></h6>
+                    <div class="calculation-box">
+                        <p><strong>Annual Net Operating Income</strong></p>
+                        <p>÷</p>
+                        <p><strong>Your Cash Invested (Down Payment + Closing Costs)</strong></p>
+                        <p>=</p>
+                        <p><strong style="color: #007bff;">Cap Rate %</strong></p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>Example:</strong></h6>
+                    <div class="example-box">
+                        <p><strong>Property Price:</strong> $300,000</p>
+                        <p><strong>Your Down Payment:</strong> $60,000</p>
+                        <p><strong>Annual Profit:</strong> $4,800</p>
+                        <hr>
+                        <p>$4,800 ÷ $60,000 = <strong>8% Cap Rate</strong></p>
+                        <p class="small text-muted">For every $1 you invested, you make 8 cents per year.</p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What's Good?</strong></h6>
+                    <ul>
+                        <li><strong>5-7%:</strong> Conservative, low-risk properties (common in expensive areas)</li>
+                        <li><strong>8-10%:</strong> Great! A solid rental property</li>
+                        <li><strong>10%+:</strong> Excellent! Either a deep discount deal or high-rent area</li>
+                    </ul>
+
+                    <p class="mt-3 text-muted small"><strong>General Rule:</strong> Compare cap rates with what you could earn elsewhere (stocks = 10%, bonds = 4%, savings = 0.5%). If your cap rate is higher, it might be a good real estate deal.</p>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Cash-on-Cash Return -->
+                <div class="metric-card mb-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3><i class="bi bi-graph-up"></i> Cash-on-Cash Return</h3>
+                            <p class="lead text-muted">"What percentage of MY money am I getting back per year?"</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="metric-badge">Your Personal Return</span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What It Means:</strong></h6>
+                    <p>Cash-on-Cash Return is the annual cash profit divided by the actual cash you put in. It's different from Cap Rate because it includes your financed portion (the mortgage).</p>
+
+                    <h6 class="mt-4 mb-3"><strong>How It's Calculated:</strong></h6>
+                    <div class="calculation-box">
+                        <p><strong>Annual Cash Profit</strong></p>
+                        <p>÷</p>
+                        <p><strong>Total Cash You Invested</strong></p>
+                        <p>=</p>
+                        <p><strong style="color: #17a2b8;">Cash-on-Cash Return %</strong></p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>Example:</strong></h6>
+                    <div class="example-box">
+                        <p><strong>Total Cash Invested:</strong> $60,000 (down payment) + $12,000 (closing) = $72,000</p>
+                        <p><strong>Annual Cash Profit:</strong> $4,680</p>
+                        <hr>
+                        <p>$4,680 ÷ $72,000 = <strong>6.5% Cash-on-Cash Return</strong></p>
+                        <p class="small text-muted">You're getting 6.5% annual return on YOUR money (not counting equity buildup).</p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What's Good?</strong></h6>
+                    <ul>
+                        <li><strong>5%:</strong> Minimal return (could do better with stocks)</li>
+                        <li><strong>8-15%:</strong> Solid return for rentals</li>
+                        <li><strong>20%+:</strong> Excellent! (Might mean you found a great deal)</li>
+                    </ul>
+
+                    <p class="mt-3 text-muted small"><strong>Why It Matters:</strong> This is YOUR actual return. If you could get 10% in the stock market, why settle for 5% in real estate (unless you expect the property to appreciate significantly)?</p>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- DSCR -->
+                <div class="metric-card mb-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3><i class="bi bi-shield-check"></i> DSCR (Debt Service Coverage Ratio)</h3>
+                            <p class="lead text-muted">"Can this property afford its mortgage?"</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="metric-badge">Lender Safety Test</span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What It Means:</strong></h6>
+                    <p>DSCR measures whether the property generates enough income to cover the mortgage payment and other debt. Lenders use this to decide if they'll finance your deal.</p>
+
+                    <h6 class="mt-4 mb-3"><strong>How It's Calculated:</strong></h6>
+                    <div class="calculation-box">
+                        <p><strong>Annual Net Operating Income</strong></p>
+                        <p>÷</p>
+                        <p><strong>Annual Mortgage Payment</strong></p>
+                        <p>=</p>
+                        <p><strong style="color: #6f42c1;">DSCR Ratio</strong></p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>Example:</strong></h6>
+                    <div class="example-box">
+                        <p><strong>Annual Income (after all expenses):</strong> $4,800</p>
+                        <p><strong>Annual Mortgage Payments:</strong> $12,000</p>
+                        <hr>
+                        <p>$4,800 ÷ $12,000 = <strong>0.40 DSCR</strong></p>
+                        <p class="small text-muted">The property only covers 40% of its mortgage payment. NOT LENDER-FRIENDLY.</p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What's Good?</strong></h6>
+                    <ul>
+                        <li><strong>Below 1.0:</strong> <span class="badge bg-danger">Problem</span> Property doesn't cover its own mortgage</li>
+                        <li><strong>1.0 - 1.2:</strong> <span class="badge bg-warning">Risky</span> Breaks even; most lenders won't approve</li>
+                        <li><strong>1.2 - 1.5:</strong> <span class="badge bg-info">Good</span> Most lenders will approve</li>
+                        <li><strong>1.5+:</strong> <span class="badge bg-success">Excellent</span> Strong income, very lender-friendly</li>
+                    </ul>
+
+                    <p class="mt-3 text-muted small"><strong>Why It Matters:</strong> If you can't get financing, you can't buy the property. Plus, a DSCR above 1.25 means you have a safety cushion if rent drops or expenses rise.</p>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- ROI -->
+                <div class="metric-card mb-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3><i class="bi bi-rocket"></i> ROI (Return on Investment)</h3>
+                            <p class="lead text-muted">"How much profit will I make when I sell?"</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <span class="metric-badge">Profit When Sold</span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What It Means:</strong></h6>
+                    <p>For rental strategies, ROI measures total return (rental income + appreciation). For Fix & Flip, it's the profit percentage when you sell.</p>
+
+                    <h6 class="mt-4 mb-3"><strong>How It Works (Fix & Flip Example):</strong></h6>
+                    <div class="calculation-box">
+                        <p><strong>Selling Price</strong></p>
+                        <p>−</p>
+                        <p><strong>Total Cash Invested (Purchase + Repairs + Costs)</strong></p>
+                        <p>=</p>
+                        <p><strong>Profit</strong></p>
+                        <p>÷</p>
+                        <p><strong>Total Cash Invested</strong></p>
+                        <p>=</p>
+                        <p><strong style="color: #dc3545;">ROI %</strong></p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>Example (Fix & Flip):</strong></h6>
+                    <div class="example-box">
+                        <p><strong>Purchase Price:</strong> $200,000</p>
+                        <p><strong>Down Payment:</strong> $50,000</p>
+                        <p><strong>Renovation Costs:</strong> $30,000</p>
+                        <p><strong>Selling Costs:</strong> $24,000 (6% of sales price when selling at $400,000)</p>
+                        <p><strong>Selling Price:</strong> $400,000</p>
+                        <hr>
+                        <p>Profit: $400,000 − $50,000 − $30,000 − $24,000 = $296,000</p>
+                        <p>ROI: $296,000 ÷ $50,000 = <strong>592% ROI!</strong></p>
+                        <p class="small text-muted">You turned $50k into $346k!</p>
+                    </div>
+
+                    <h6 class="mt-4 mb-3"><strong>What's Good?</strong></h6>
+                    <ul>
+                        <li><strong>Fix & Flip:</strong> 20%+ ROI is solid; 50%+ is excellent</li>
+                        <li><strong>Rentals (per year):</strong> 10%+ is great; 15%+ is exceptional</li>
+                    </ul>
+
+                    <p class="mt-3 text-muted small"><strong>Pro Tip:</strong> Don't just look at ROI for one year. For rentals, combine yearly cash flow ROI with long-term appreciation. For flips, focus on absolute profit $ and how long the project takes.</p>
+                </div>
+
+                <hr class="my-5">
+
+                <h2 class="mb-4">Quick Metric Cheat Sheet</h2>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Metric</th>
+                                <th>What It Answers</th>
+                                <th>Good Number</th>
+                                <th>Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Monthly Cash Flow</strong></td>
+                                <td>Money in my pocket monthly?</td>
+                                <td>$100-500+</td>
+                                <td>Rentals (LTR, MTR, STR)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cap Rate</strong></td>
+                                <td>How hard is the property working?</td>
+                                <td>8-12%</td>
+                                <td>Comparing rental properties</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cash-on-Cash Return</strong></td>
+                                <td>Return on MY cash per year?</td>
+                                <td>8-15%</td>
+                                <td>Comparing different investments</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DSCR</strong></td>
+                                <td>Can the property afford the mortgage?</td>
+                                <td>1.25+</td>
+                                <td>Getting a loan approved</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ROI</strong></td>
+                                <td>Profit when sold?</td>
+                                <td>20%+ (flip), 10%+ (annual)</td>
+                                <td>Fix & flip projects</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="alert alert-success mt-5">
+                    <h5><i class="bi bi-check-circle"></i> You Now Know the Numbers!</h5>
+                    <p class="mb-0">You don't need to be a math genius to use them. The analyzer calculates everything for you. Now let's see these in action with real examples →</p>
+                </div>
+
+                <div class="mt-5 text-center">
+                    <a href="examples.html" class="btn btn-primary btn-lg">
+                        See Real Examples <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container-lg text-center">
+            <p class="mb-0">&copy; 2026 Real Estate Investor Analyzer. All rights reserved.</p>
+            <small>Built for real estate investors, by real estate investors.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
